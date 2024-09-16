@@ -1,0 +1,30 @@
+writeelf changelog
+
+v1.6 (Feb 27, 2008):
+- NOW WORKS IN VISTA! (HUGE thanks to predakang of #wiidev@efnet)
+- allow -z option to be used without writing a file
+- added url to output header
+
+v1.5 (Feb 24, 2008):
+- fixed issue with "SP0"-named drives (PCI/IDE-based)
+
+v1.4 (Feb 24, 2008):
+- added -z option to zero out the writable area
+
+v1.3 (Feb 23, 2008):
+- alternate mode works completely incorrectly, temporarily removed
+- added -s option to change sector to write to
+
+v1.2 (Feb 22, 2008):
+- added "real" command line parsing system
+- added verbose mode (to hide unnecessary messages)
+- added alternate mode for possible support for non-block device card readers (experimental)
+- standardized output substantially
+
+v1.1 (Feb 21, 2008):
+- fixed typo of backup filename in usage text
+- added note about Administrator requirement to readme
+- added note about Administrator requirement upon failure to open device
+
+v1.0 (Feb 21, 2008):
+- initial release

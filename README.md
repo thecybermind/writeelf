@@ -2,7 +2,7 @@
 by cybermind - cybermind@gmail.com  
 for Windows  
 
-* Note that the code after v1.0 is currently missing. *
+**Note that the code after v1.0 is currently missing.**
 
 Writes a specified ELF file to an SD card for use with the [Twilight Hack](http://wiibrew.org/index.php?title=Twilight_Hack).
 
@@ -28,21 +28,25 @@ Writes a specified ELF file to an SD card for use with the [Twilight Hack](http:
 Examples:
 
 To write demo.elf to drive J: and exit:  
+
     writeelf -f=demo.elf J
 
 To backup data from drive H: and exit:  
+
     writeelf -b H
 
 To backup data from drive G: into mybackup.bak and then write demo.elf:  
+
     writeelf -f=demo.elf -b=mybackup.bak G
     
 To zero out any previous data and then write demo.elf to drive Q:  
+
     writeelf -f=demo.elf -z Q
 
 To simply test to see if drive I: is accessible:  
+
     writeelf -v I
     
-
 
 This should not be able to write to a fixed drive, but don't try it anyway!
 
@@ -52,7 +56,7 @@ YOU MUST RUN THIS AS AN ADMINISTRATOR. If you are not logged in as an administra
 
     runas /env /user:Administrator "writeelf -f=demo.elf J"
     
-where "Administrator" is the administrator account name on your computer. It will prompt you for a password.
+where `Administrator` is the administrator account name on your computer. It will prompt you for a password.
 
 
 

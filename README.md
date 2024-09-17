@@ -2,7 +2,7 @@
 by cybermind - cybermind@gmail.com  
 for Windows  
 
-**Note that the code after v1.0 is currently missing.**
+**Note that the code after v1.0 is currently missing as this predates my use of VCS.**
 
 Writes a specified ELF file to an SD card for use with the [Twilight Hack](http://wiibrew.org/index.php?title=Twilight_Hack).
 
@@ -52,7 +52,7 @@ This should not be able to write to a fixed drive, but don't try it anyway!
 
 This will (by design) corrupt any file occupying the 16384 sectors starting with sector 2048, so just don't leave anything important on the card. You can also restore the old data by providing a backup filename for the -f parameter.
 
-YOU MUST RUN THIS AS AN ADMINISTRATOR. If you are not logged in as an administrator, you can use the "runas" command:
+*YOU MUST RUN THIS AS AN ADMINISTRATOR*. If you are not logged in as an administrator, you can use the "runas" command:
 
     runas /env /user:Administrator "writeelf -f=demo.elf J"
     

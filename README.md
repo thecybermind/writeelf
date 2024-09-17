@@ -2,7 +2,9 @@
 by cybermind - cybermind@gmail.com  
 for Windows  
 
-Writes a specified ELF file to an SD card for use with the Twilight Hack ( http://wiibrew.org/index.php?title=Twilight_Hack ).
+* Note that the code after v1.0 is currently missing. *
+
+Writes a specified ELF file to an SD card for use with the [Twilight Hack](http://wiibrew.org/index.php?title=Twilight_Hack).
 
     Usage:
     writeelf [-b[=file]] [-f=file] [-h] [-s] [-v] [-V] drive
@@ -25,19 +27,19 @@ Writes a specified ELF file to an SD card for use with the Twilight Hack ( http:
 
 Examples:
 
-To write demo.elf to drive J: and exit:
+To write demo.elf to drive J: and exit:  
     writeelf -f=demo.elf J
 
-To backup data from drive H: and exit:
+To backup data from drive H: and exit:  
     writeelf -b H
 
-To backup data from drive G: into mybackup.bak and then write demo.elf:
+To backup data from drive G: into mybackup.bak and then write demo.elf:  
     writeelf -f=demo.elf -b=mybackup.bak G
     
-To zero out any previous data and then write demo.elf to drive Q:
+To zero out any previous data and then write demo.elf to drive Q:  
     writeelf -f=demo.elf -z Q
 
-To simply test to see if drive I: is accessible:
+To simply test to see if drive I: is accessible:  
     writeelf -v I
     
 
